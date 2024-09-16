@@ -6,7 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
 Introduction
 ------
 I am a fourth-year undergraduate at UW-Madison. My research interest is in
@@ -28,4 +27,5 @@ Feel free to email me at liu2256 [at] wisc [dot] edu.
 Side note
 ------
 I am a huge history fan. Check out the
-[History](https://AlexisL321.github.io/history/) page on my website!
+[History](https://AlexisL321.github.io/history/) page (currently under
+construction) on my website!

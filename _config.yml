@@ -12,7 +12,7 @@ title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Yifei Alexis Liu"
 description              : &description "academic webpage"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://alexisl321.github.io # the base url
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "AlexisL321/AlexisL321.github.io"
 
@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Fourth-year undergrad at UW-Madison"
   location         : "Madison, WI"
-  employer         : "University of Wisconsin-Madison"
+  employer         : "UW-Madison"
   uri              : # URL
   email            : "liu2256@wisc.edu" 
 
