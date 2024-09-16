@@ -14,7 +14,7 @@ in physics-based simulation, topology optimization, sparse matrix
 algorithms and all kinds of numerical methods. I am also constantly
 exploring new topics within computer graphics!
 
-I have done several research spanning from material science to aerodynamics
+I have done several research spanning from material science to fluid dynamics
 to computer vision before finding my passion in computer graphics and
 computational math. See my [research
 page](https://AlexisL321.github.io/research/) for more details!
