@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Yifei (Alexis) Liu"
   pronouns         : # example: "she/her"  
-  bio              : "Fourth-year undergrad at UW-Madison"
+  bio              : "Fourth-year undergrad at UW-Madison, majoring CS, Math and History"
   location         : "Madison, WI"
   employer         : "UW-Madison"
   uri              : # URL
@@ -57,7 +57,7 @@ author:
   #keybase          : # Username
   #instagram        : # Username
   #lastfm           : # Username
-  linkedin         : https://www.linkedin.com/in/alexis-l-44358b24a/
+  linkedin         : alexis-l-44358b24a/
   #mastodon         : # URL
   #medium           : # URL
   #pinterest        : # Username
@@ -221,6 +221,18 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  research:
+    output: true
+    permalink: /:collection/:path/
+  projects:
+    output: true
+    permalink: /:collection/:path/
+  history:
+    output: true
+    permalink: /:collection/:path/
+
+
+
 
 
 # These settings control how pages and collections are included in the site
@@ -255,7 +267,7 @@ defaults:
   # _publications
   - scope:
       path: ""
-      type: publications
+      type: research
     values:
       layout: single
       author_profile: true
@@ -264,7 +276,7 @@ defaults:
   # _portfolio
   - scope:
       path: ""
-      type: portfolio
+      type: projects
     values:
       layout: single
       author_profile: true
@@ -290,7 +302,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Chicaogo # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
