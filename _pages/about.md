@@ -1,13 +1,11 @@
 ---
 permalink: /
-title: ""
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-Introduction
-------
 I am a fourth-year undergraduate at UW-Madison. My research interest is in
 **computer graphics** and **computational mathematics**. I am especially interested in physics-based simulation, topology optimization, sparse matrix 
 algorithms and all kinds of numerical methods and matrix factorization
