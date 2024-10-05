@@ -9,14 +9,11 @@ redirect_from:
 Introduction
 ------
 I am a fourth-year undergraduate at UW-Madison. My research interest is in
-**computer graphics** and **computational mathematics**. I am especially interested
-in physics-based simulation, topology optimization, sparse matrix
-algorithms and all kinds of numerical methods. I am also constantly
-exploring new topics within computer graphics!
+**computer graphics** and **computational mathematics**. I am especially interested in physics-based simulation, topology optimization, sparse matrix 
+algorithms and all kinds of numerical methods and matrix factorization
+techniques. I am also constantly exploring new topics within computer graphics!
 
-I have done several research spanning from material science to fluid dynamics
-to computer vision before finding my passion in computer graphics and
-computational math. See my [research
+I have done several [research](https://AlexisL321.github.io/research/) spanning from material science to fluid dynamics to computer vision before finding my passion in computer graphics and computational math. See my [research
 page](https://AlexisL321.github.io/research/) for more details!
 
 I am currently looking to apply for grad school and also looking for an

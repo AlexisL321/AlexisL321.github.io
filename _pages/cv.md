@@ -14,32 +14,36 @@ Education
 * B.S. University of Wisconsin-Madison, Sept.2021--Dec.2024
   * Major: CS, Math, History
   * Minor/Certificate: Physics
-  * Overall GPA: 3.904
+  * Overall GPA: 3.904/4
   * Selected Coursework:
-    * <span style="font-size:10px">Computer Graphics (A), Computational Math II (grad-course, A), Numerical Analysis (A), Numerical Linear Algebra (A)</span>
-	* <span style="font-size:10px">Algorithm (A), Database Management (A), Operating System (A), LLM in practice (A)</span>
-	* <span style="font-size:12px">Mathematical Analysis I (A), Modern Algebra I (A) </span>
-	* <span style="font-size:10px">Mechanics (A)</span>
+    * <span style="font-size:14px">Computer Graphics (A), Computational Math II (grad-course, A), Numerical Analysis (A), Numerical Linear Algebra (A)</span>
+	* <span style="font-size:14px">Algorithm (A), Database Management (A), Operating System (A), LLM in practice (A)</span>
+	* <span style="font-size:14px">Mathematical Analysis I (A), Modern Algebra I (A) </span>
+	* <span style="font-size:14px">Mechanics (A)</span>
 
 [Research experience](https://AlexisL321.github.io/research/)
 ======
-* Computer Graphics Research --- Oct. 2023 to present
-* Numerical Analysis Research --- Sept. 2023 to present
-* Computer Vision Research --- June 2022 to Aug. 2023
-* Fluid Dynamic Research --- Feb. 2022 to July 2022
-* Material Science Research --- Sept. 2021 to Apr. 2022
+* Computer Graphics Research
+* Numerical Analysis Research
+* Computer Vision Research
+* Fluid Dynamic Research
+* Material Science Research
 
-This section is still under construction
 
-Projects
+[Projects](https://AlexisL321.github.io/projects/)
 ======
-This section will be added
+* Physics-informed Neural Network
+* Toy banking app
+* LLM conceptual representation
+* Drone footage processing
+* Stock price prediction
 
 Skills
 ======
-* Python, JavaScript, C, C++, Java, MatLab
+* Python, JavaScript, C/C++, Java, MatLab, HTML/CSS
 * OpenCV, Next.js, Express.js, Mongodb, React.js
-* Agile, Scrum
+* vim, git
+* Agile framework, Scrum
 
 <!---Publications
 ======
