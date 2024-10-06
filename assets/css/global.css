@@ -22,23 +22,23 @@ color:white;
 }
 
 p:hover{
-color: #1c4c7a;
+color: #03396c;
 }
 
-.sparse:hover{
+#sparse:hover{
 color: #6e9827;
 }
 
-.sparse::selection{
+#sparse::selection{
 background-color: #6e9827;
 color:white;
 }
 
-.SAV:hover{
+#SAV:hover{
 color: #ffecb8;
 }
 
-.SAV::selection{
+#SAV::selection{
 background-color: #ffecb8;
 color:white;
 }

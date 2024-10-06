@@ -14,7 +14,8 @@ author_profile: true
 
 {% include base_path %}
 
-<h2 id="sparse">Batched Sparse Matrix Solver for Accelerating Jacobi
+<div id="sparse">
+<h2>Batched Sparse Matrix Solver for Accelerating Jacobi
  Smoother </h2>
 <p>Sept.2024 -- present</p><hr/>
 <div class="read-more-container" max-length="100">
@@ -46,8 +47,10 @@ Multigrid preconditioned Conjugate Gradient method has been the standard
  before I joined and I would like to thank Prof. Fabien for
  letting me work on this project.<br>
  </div>
+ </div>
 
- <h2 id="SAV">Improving the SAV method for CH-NS Coupled Equations</h2>
+ <div id="SAV">
+ <h2>Improving the SAV method for CH-NS Coupled Equations</h2>
  <p>Sept.2023 -- present</p><hr/>
  <div class="read-more-container">
 Scalar Auxiliary Variable (SAV) method was proposed in recent years to
@@ -57,9 +60,16 @@ Scalar Auxiliary Variable (SAV) method was proposed in recent years to
  href="https://www.sciencedirect.com/science/article/pii/S0021999122003734"
  target="_blank" title="See the paper">R-SAV</a> (SAV with
  relaxation) has been proposed to solve this issue. <a
- href="https://www.sciencedirect.com/science/article/pii/S1007570422005421"
+ href="https://www.sciencedirect.com/science/article/pii/S1007570422005421?casa_token=9xgfd9jPJEQAAAAA:p9-vxz5o4jtWTH2M47oJ7rgLz9LRe_gG_-KqEIeX-w8NYPG9tlildTqubScpFiJZAyBii6YFyw#sec3"
  target="_blank" title="See the paper">Here</a> is R-SAV being used to
- solve Cahn-Hilliard and Navier-Stokes coupled equation (CHNS). 
+ solve Cahn-Hilliard and Navier-Stokes coupled equation (CHNS).<br><br>
+Incompressible Navier-Stokes equation is usually solved by projection
+ method, and to ensure the stability of the solution when using SAV to
+ solve CH and projection to solve NS in CHNS coupled problem, there is a
+ scheme called <a
+ href="https://www.math.purdue.edu/~shen7/pub/LS_M3AS22.pdf"
+ target="_blank" title="See the paper">M-SAV (multiple SAV)</a>. 
+ </div>
  </div>
 
 <script type="module">

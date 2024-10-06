@@ -5,34 +5,75 @@ function setupReadMore() {
     const maxLength = parseInt(container.getAttribute("max-length"), 10);
     if (maxLength == NaN) maxLength = 100; //if max-length is not specified
 
-    const fullText = container.textContent.trim();
+    const fullText = container.innerHTML;
     if (fullText.length > maxLength) {
-      const show = fullText.slice(0, maxLength);
-      const hide = fullText.slice(maxLength);
-      container.innerHTML = `${show}<span class="dots">...</span><span
-class="hidden-content">${hide}</span><span class="read-more-btn">Read
- More</span>`;
+	  container.innerHTML = truncateHTML(fullText, maxLength);
+	  let isExpanded = false;
+
+      //const show = fullText.slice(0, maxLength);
+      //const hide = fullText.slice(maxLength);
+      //container.innerHTML = `${show}<span class="dots">...</span><span class="hidden-content">${hide}</span><span class="read-more-btn">Read More</span>`;
+	  container.innerHTML += `<span class="dots">...</span><span class="read-more-btn"> Read More</span>`;
 
       const readMoreBtn = container.querySelector(".read-more-btn");
       const dots = container.querySelector("dots");
-      const hiddenText = container.querySelector("hidden-content");
+      //const hiddenText = container.querySelector("hidden-content");
 
       readMoreBtn.addEventListener("click", () => {
         if (
-          hiddenText.style.disply === "none" ||
-          hiddenText.style.display === ""
+          //hiddenText.style.disply === "none" ||
+          //hiddenText.style.display === ""
+		  !isExpanded //hasn't been expanded
         ) {
-          hiddenText.style.display = "inline";
+		  container.innerHTML = fullText;
+          //hiddenText.style.display = "inline";
           dots.style.display = "none";
           readMoreBtn.textContent = "Read Less";
         } else {
-          hiddenText.style.display = "none";
+		  container.innerHTML = truncateHTML(fullText, maxLength);
+          //hiddenText.style.display = "none";
           dots.style.display = "inline";
           readMorebtn.textContent = "Read More";
         }
+		isExpanded = !isExpanded;
       });
     }
   });
+}
+
+function truncateHTML (html, charLimit) {
+  let div = document.createElement('div');
+  div.innerHTML = html;
+
+  let content = '';
+  let length = 0;
+
+  function traverse(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      let text = node.textContent;
+      if (length + text.length > charLimit) {
+        content += text.substring(0, charLimit - length);
+        length = charLimit;
+      } else {
+        content += text;
+        length += text.length;
+      }
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      let tagOpen = `<${node.tagName.toLowerCase()}${Array.from(node.attributes).map(attr => ` ${attr.name}="${attr.value}"`).join('')}>`;
+      let tagClose = `</${node.tagName.toLowerCase()}>`;
+      
+      content += tagOpen;
+      Array.from(node.childNodes).forEach(child => {
+        if (length < charLimit) {
+          traverse(child);
+        }
+      });
+      content += tagClose;
+    }
+  }
+
+  traverse(div);
+  return content;
 }
 
 // Export the function so it can be used in the HTML file
