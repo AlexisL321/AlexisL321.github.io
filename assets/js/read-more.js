@@ -5,18 +5,21 @@ function setupReadMore() {
     const maxLength = parseInt(container.getAttribute("max-length"), 10);
     if (maxLength == NaN) maxLength = 100; //if max-length is not specified
 
-    const fullText = container.innerHTML;
+	const text = container.querySelector('.read-more-text');
+	const readMoreBtn = container.querySelector('.read-more-btn');
+
+    const fullText = text.innerHTML;
     if (fullText.length > maxLength) {
-	  container.innerHTML = truncateHTML(fullText, maxLength);
+	  text.innerHTML = truncateHTML(fullText, maxLength);
 	  let isExpanded = false;
 
       //const show = fullText.slice(0, maxLength);
       //const hide = fullText.slice(maxLength);
       //container.innerHTML = `${show}<span class="dots">...</span><span class="hidden-content">${hide}</span><span class="read-more-btn">Read More</span>`;
-	  container.innerHTML += `<span class="dots">...</span><span class="read-more-btn"> Read More</span>`;
+	  //container.innerHTML += `<span class="dots">...</span><span class="read-more-btn"> Read More</span>`;
 
-      const readMoreBtn = container.querySelector(".read-more-btn");
-      const dots = container.querySelector("dots");
+      //const readMoreBtn = container.querySelector(".read-more-btn");
+      //const dots = container.querySelector("dots");
       //const hiddenText = container.querySelector("hidden-content");
 
       readMoreBtn.addEventListener("click", () => {
@@ -25,18 +28,19 @@ function setupReadMore() {
           //hiddenText.style.display === ""
 		  !isExpanded //hasn't been expanded
         ) {
-		  container.innerHTML = fullText;
-		  container.innerHTML += `<span class="read-more-btn">Read More</span>`;
+		  text.innerHTML = fullText;
+		  //This does not work because innerHTML is always getting changed
+		  //and thus the previous btn is overwritten
+		  //text.innerHTML += `<span class="read-more-btn">Read More</span>`;
           //hiddenText.style.display = "inline";
-          dots.style.display = "none";
+          //dots.style.display = "none";
           readMoreBtn.textContent = "Read Less";
         } else {
-		  container.innerHTML = truncateHTML(fullText, maxLength);
-		  container.innerHTML += `<span class="dots">...</span><span
-		  class="read-more-btn"> Read More</span>`;
+		  text.innerHTML = truncateHTML(fullText, maxLength);
+		  //text.innerHTML += `<span class="dots">...</span><span class="read-more-btn"> Read More</span>`;
           //hiddenText.style.display = "none";
-          dots.style.display = "inline";
-          //readMoreBtn.textContent = "Read More";
+          //dots.style.display = "inline";
+          readMoreBtn.textContent = "...Read More";
         }
 		isExpanded = !isExpanded;
       });

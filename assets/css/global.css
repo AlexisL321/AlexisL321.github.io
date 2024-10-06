@@ -29,17 +29,17 @@ color: #03396c;
 color: #6e9827;
 }
 
-#sparse::selection{
+#sparse ::selection{
 background-color: #6e9827;
 color:white;
 }
 
 #SAV:hover{
-color: #ffecb8;
+color: #538599;
 }
 
-#SAV::selection{
-background-color: #ffecb8;
+#SAV ::selection{
+background-color: #538599;
 color:white;
 }
 
