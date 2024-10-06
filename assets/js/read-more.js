@@ -5,7 +5,7 @@ function setupReadMore() {
     const maxLength = parseInt(container.getAttribute("max-length"), 10);
     if (maxLength == NaN) maxLength = 100; //if max-length is not specified
 
-    const fullText = readMoreContent.textContent.trim();
+    const fullText = container.textContent.trim();
     if (fullText.length > maxLength) {
       const show = fullText.slice(0, maxLength);
       const hide = fullText.slice(maxLength);
