@@ -5,11 +5,55 @@ permalink: /research/
 author_profile: true
 ---
 
+<link rel="styl" href="../assets/css/global.css">
+<script src="../assets/js/read-more.js"></script>
+
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
 
 {% include base_path %}
+
+<h2 id="sparse">Batched Sparse Matrix Solver for Accelerating Jacobi Smoother </h2><hr />
+<p>Sept.2024 -- present</p><hr />
+<div class="read-more-container" max-length="100">
+Multigrid preconditioned Conjugate Gradient method has been the standard
+ solver for computer graphics research. For some problem, like the one to be
+ solved here involving a large matrix with a large condition number, we
+ might need to not only use (geometric) multigrid to precondition the
+ conjugate gradient solver but also use smoother to precondition the
+ multigrid preconditioner. Here we use block Jacobi smoother and it will become
+ the most time-consuming part of the preconditioner because of
+ matrix-vector multiplication and the factorization (or direct inversion if
+ the block size is small) of the diagonal block matrices. <br>
+ To speed up the solver, we can parallelize each part of MGPCG. The purpose
+ of this research is to look at how the factorization of the sparse diagonal block
+ matrices can be parallelized. The context or the problem to solve is
+ Darcy's equation discretized using finite element method and the matrix
+ coming out of the FEM discretization is sparse and ill-conditioned with
+ very clear block structure along the diagonal (the blocks along the
+ diagonal will also be sparse).<br>
+ I started this research in September this year, so I haven't started the
+ implementation so far. Until now I have learned sparse matrix algorithm
+ including sparse matrix representation, postordering, some fill-reducing
+ ordering techniques, and sparse Cholesky factorization. I am currently
+ doing literature survey and implementing conjugate gradient with Jacobi
+ solver without parallelization. I will update this section as the research
+ proceeds.<br>
+ I am very grateful to have Prof. Maurice Fabien in UW-Madison Math
+ department as my mentor. He has been doing all the FEM discretization
+ before I joined and I would like to thank Prof. Fabien for
+ letting me work on this project.<br>
+ </div>
+
+ <h2 id="SAV">Improving the SAV method for CH-NS Coupled Equations</h2><hr />
+ <p>Sept.2023 -- present</p><br>
+ <div class="read-more-container">
+Scalar Auxiliary Variable (SAV) method was proposed in recent years to
+ solve the gradient flow problem which Cahn-Hilliard (CH) equations are
+ part of. One problem of the original SAV is that it 
+ </div>
+
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.research_category %}
