@@ -26,14 +26,17 @@ function setupReadMore() {
 		  !isExpanded //hasn't been expanded
         ) {
 		  container.innerHTML = fullText;
+		  container.innerHTML += `<span class="read-more-btn">Read More</span>`;
           //hiddenText.style.display = "inline";
           dots.style.display = "none";
           readMoreBtn.textContent = "Read Less";
         } else {
 		  container.innerHTML = truncateHTML(fullText, maxLength);
+		  container.innerHTML += `<span class="dots">...</span><span
+		  class="read-more-btn"> Read More</span>`;
           //hiddenText.style.display = "none";
           dots.style.display = "inline";
-          readMorebtn.textContent = "Read More";
+          //readMoreBtn.textContent = "Read More";
         }
 		isExpanded = !isExpanded;
       });
