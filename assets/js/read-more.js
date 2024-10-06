@@ -36,4 +36,4 @@ class="hidden-content">${hide}</span><span class="read-more-btn">Read
 }
 
 // Export the function so it can be used in the HTML file
-module.exports= { setupReadMore };
+export { setupReadMore };
