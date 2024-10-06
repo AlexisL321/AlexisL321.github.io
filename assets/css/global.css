@@ -25,6 +25,24 @@ p:hover{
 color: #1c4c7a;
 }
 
+.sparse:hover{
+color: #6e9827;
+}
+
+.sparse::selection{
+background-color: #6e9827;
+color:white;
+}
+
+.SAV:hover{
+color: #ffecb8;
+}
+
+.SAV::selection{
+background-color: #ffecb8;
+color:white;
+}
+
 .read-more-content{
 display: none;
 }
