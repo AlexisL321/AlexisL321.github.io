@@ -43,6 +43,24 @@ background-color: #538599;
 color:white;
 }
 
+#dense:hover{
+color: #453858;
+}
+
+#dense ::selection{
+background-color: #453858;
+color:white;
+}
+
+#vision:hover{
+color: #814d17;
+}
+
+#vision ::selection{
+background-color: #814d17;
+color:white;
+}
+
 .read-more-content{
 display: none;
 }

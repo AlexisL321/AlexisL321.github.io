@@ -17,8 +17,8 @@ author_profile: true
 <div id="sparse">
 <h2>Batched Sparse Matrix Solver for Accelerating Jacobi
  Smoother </h2>
-<p>Sept.2024 -- present</p><hr/>
-<div class="read-more-container" max-length="100">
+<p>Sept.2024 -- present</p>
+<div class="read-more-container" max-length="500">
 <p class="read-more-text">
 Multigrid preconditioned Conjugate Gradient method has been the standard
  solver for computer graphics research. For some problem, like the one to be
@@ -50,12 +50,12 @@ Multigrid preconditioned Conjugate Gradient method has been the standard
  </p>
  <p class="read-more-btn">...Read More</p>
  </div>
- </div>
+ </div><hr/>
 
  <div id="SAV">
  <h2>Improving the SAV method for CH-NS Coupled Equations</h2>
- <p>Sept.2023 -- present</p><hr/>
- <div class="read-more-container" max-length="100">
+ <p>Sept.2023 -- present</p>
+ <div class="read-more-container" max-length="500">
  <p class="read-more-text">
 Scalar Auxiliary Variable (SAV) method was proposed in recent years to
  solve the gradient flow problem which Cahn-Hilliard (CH) equations are
@@ -76,7 +76,29 @@ Incompressible Navier-Stokes equation is usually solved by projection
  </p>
  <p class="read-more-btn">...Read More</>
  </div>
- </div>
+ </div><hr/>
+
+<div id="dense">
+<h2>Accelerating Dense Block Cholesky Factorization on TensorCore</h2>
+<p>Oct.2023 -- present</p>
+<div class="read-more-container" max-length="300">
+<p class="read-more-text">
+Under construction
+</p>
+<p class="read-more-btn">...Read More</p>
+</div>
+</div>
+
+<div id="vision">
+<h2>Reducing Feature Points Needed for Point Cloud Reconstruction</h2>
+<p>Jan.2022 -- Aug.2023</p>
+<div class="read-more-container" max-length="100">
+<p class="read-more-text">
+Under construction
+</p>
+<p class="read-more-btn">...Read More</p>
+</div>
+</div>
 
 <script type="module">
 import {setupReadMore} from '../assets/js/read-more.js';
@@ -87,6 +109,7 @@ setupReadMore();
 </script>
 
 <!-- New style rendering if publication categories are defined -->
+<!--
 {% if site.research_category %}
   {% for category in site.research_category  %}
     {% assign title_shown = false %}
@@ -106,6 +129,4 @@ setupReadMore();
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
-
+-->
