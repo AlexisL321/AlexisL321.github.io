@@ -11,7 +11,7 @@ I am a fourth-year undergraduate at UW-Madison, aspiring to pursue my
  interests in
  **computer graphics** and **computational mathematics**. I am especially
  interested in physics-based simulation, numerical linear algebra
- (especially sparse matrix factorization/reordering), topology optimization, and numerical analysis. I am also constantly exploring new
+ (e.g. sparse matrix factorization/reordering), topology optimization, and numerical analysis. I am also constantly exploring new
  topics within graphics and computational math!
 
 I have done several [research](https://AlexisL321.github.io/research/)
