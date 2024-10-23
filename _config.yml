@@ -246,8 +246,8 @@ defaults:
       author_profile: true
   # _teaching
   - scope:
-      path: "/teaching/"
-      type: pages
+      path: "teaching/"
+      type: teaching
     values:
       layout: single
       author_profile: true
@@ -255,7 +255,7 @@ defaults:
       comments: true
   # _research
   - scope:
-      path: "/research/"
+      path: "research/"
       type: research
     values:
       layout: single
@@ -264,7 +264,7 @@ defaults:
       comments: true
   # _projects
   - scope:
-      path: "/projects/"
+      path: "projects/"
       type: projects
     values:
       layout: single
@@ -281,7 +281,7 @@ defaults:
       share: true
   #_history
   - scope:
-      path: "/history/"
+      path: "history/"
       type: pages
     values:
       layout: single
