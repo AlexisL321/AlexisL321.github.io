@@ -246,8 +246,8 @@ defaults:
       author_profile: true
   # _teaching
   - scope:
-      path: ""
-      type: teaching
+      path: "/teaching/"
+      type: pages
     values:
       layout: single
       author_profile: true
@@ -279,6 +279,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  #_history
+  - scope:
+      path: "/history/"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
 
 # Sass/SCSS
 sass:
