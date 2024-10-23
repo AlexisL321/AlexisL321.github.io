@@ -1,0 +1,71 @@
+h1::selection {
+  background-color: #1c4c7a;
+  color: white;
+}
+
+h1:hover {
+  color: #ae0001;
+}
+
+h2::selection {
+  background-color: #1c4c7a;
+  color: white;
+}
+
+h2:hover {
+  color: #ae0001;
+}
+
+p::selection {
+  background-color: #ae0001;
+  color: white;
+}
+
+p:hover {
+  color: #03396c;
+}
+
+#sparse:hover {
+  color: #6e9827;
+}
+
+#sparse ::selection {
+  background-color: #6e9827;
+  color: white;
+}
+
+#SAV:hover {
+  color: #538599;
+}
+
+#SAV ::selection {
+  background-color: #538599;
+  color: white;
+}
+
+#dense:hover {
+  color: #453858;
+}
+
+#dense ::selection {
+  background-color: #453858;
+  color: white;
+}
+
+#vision:hover {
+  color: #814d17;
+}
+
+#vision ::selection {
+  background-color: #814d17;
+  color: white;
+}
+
+.read-more-content {
+  display: none;
+}
+
+.read-more-btn {
+  color: #1c4c7a;
+  cursor: pointer;
+}

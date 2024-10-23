@@ -1,0 +1,133 @@
+---
+layout: archive
+title: "Research Experience"
+permalink: /research/
+author_profile: true
+---
+
+<link rel="stylesheet" href="../assets/css/global.css">
+<script type="module" src="../assets/js/read-more.js"></script>
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+<div id="sparse">
+<h2>Batched Sparse Matrix Solver for Accelerating Jacobi
+ Smoother </h2>
+<p>Sept.2024 -- present</p>
+<div class="read-more-container" max-length="500">
+<p class="read-more-text">
+Multigrid preconditioned Conjugate Gradient method has been the standard
+ solver for computer graphics research. For some problem, like the one to be
+ solved here involving a large matrix with a large condition number, we
+ might need to not only use (geometric) multigrid to precondition the
+ conjugate gradient solver but also use smoother to precondition the
+ multigrid preconditioner. Here we use block Jacobi smoother and it will become
+ the most time-consuming part of the preconditioner because of
+ matrix-vector multiplication and the factorization (or direct inversion if
+ the block size is small) of the diagonal block matrices. <br><br>
+ To speed up the solver, we can parallelize each part of MGPCG. The purpose
+ of this research is to look at how the factorization of the sparse diagonal block
+ matrices can be parallelized. The context or the problem to solve is
+ Darcy's equation discretized using finite element method and the matrix
+ coming out of the FEM discretization is sparse and ill-conditioned with
+ very clear block structure along the diagonal (the blocks along the
+ diagonal will also be sparse).<br><br>
+ I started this research in September this year, so I haven't started the
+ implementation so far. Until now I have learned sparse matrix algorithm
+ including sparse matrix representation, postordering, some fill-reducing
+ ordering techniques, and sparse Cholesky factorization. I am currently
+ doing literature survey and implementing conjugate gradient with Jacobi
+ solver without parallelization (<a
+ href="https://github.com/AlexisL321/batched_solver" target="_blank">github repo</a>). I will update this section as the research
+ proceeds.<br><br>
+ I am very grateful to have Prof. Maurice Fabien in UW-Madison Math
+ department as my mentor. He has been doing all the FEM discretization
+ before I joined and I would like to thank Prof. Fabien for
+ letting me work on this project.<br>
+ </p>
+ <p class="read-more-btn">...Read More</p>
+ </div>
+ </div><hr/>
+
+ <div id="SAV">
+ <h2>Improving the SAV method for CH-NS Coupled Equations</h2>
+ <p>Sept.2023 -- present</p>
+ <div class="read-more-container" max-length="500">
+ <p class="read-more-text">
+Scalar Auxiliary Variable (SAV) method was proposed in recent years to
+ solve the gradient flow problem which Cahn-Hilliard (CH) equations are
+ part of. One problem of the original SAV is that it does not satisfy the
+ exact energy dissipation function and a new method of <a
+ href="https://www.sciencedirect.com/science/article/pii/S0021999122003734"
+ target="_blank" title="See the paper">R-SAV</a> (SAV with
+ relaxation) has been proposed to solve this issue. <a
+ href="https://www.sciencedirect.com/science/article/pii/S1007570422005421?casa_token=9xgfd9jPJEQAAAAA:p9-vxz5o4jtWTH2M47oJ7rgLz9LRe_gG_-KqEIeX-w8NYPG9tlildTqubScpFiJZAyBii6YFyw#sec3"
+ target="_blank" title="See the paper">Here</a> is R-SAV being used to
+ solve Cahn-Hilliard and Navier-Stokes coupled equation (CHNS).<br><br>
+Incompressible Navier-Stokes equation is usually solved by projection
+ method, and to ensure the stability of the solution when using SAV to
+ solve CH and projection to solve NS in CHNS coupled problem, there is a
+ scheme called <a
+ href="https://www.math.purdue.edu/~shen7/pub/LS_M3AS22.pdf"
+ target="_blank" title="See the paper">M-SAV</a> (multiple SAV). 
+ </p>
+ <p class="read-more-btn">...Read More</>
+ </div>
+ </div><hr/>
+
+<div id="dense">
+<h2>Accelerating Dense Block Cholesky Factorization on TensorCore</h2>
+<p>Oct.2023 -- present</p>
+<div class="read-more-container" max-length="300">
+<p class="read-more-text">
+Under construction
+</p>
+<p class="read-more-btn">...Read More</p>
+</div>
+</div><hr/>
+
+<div id="vision">
+<h2>Reducing Feature Points Needed for Point Cloud Reconstruction</h2>
+<p>Jan.2022 -- Aug.2023</p>
+<div class="read-more-container" max-length="100">
+<p class="read-more-text">
+Under construction
+</p>
+<p class="read-more-btn">...Read More</p>
+</div>
+</div><hr/>
+
+<script type="module">
+import {setupReadMore} from '../assets/js/read-more.js';
+console.log("yes");
+document.addEventListener('DOMContentLoaded', function() {
+setupReadMore();
+});
+</script>
+
+<!-- New style rendering if publication categories are defined -->
+<!--
+{% if site.research_category %}
+  {% for category in site.research_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.research reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.research reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+-->
