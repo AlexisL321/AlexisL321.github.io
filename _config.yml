@@ -253,18 +253,18 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _research
   - scope:
-      path: ""
+      path: "/research/"
       type: research
     values:
       layout: single
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _projects
   - scope:
-      path: ""
+      path: "/projects/"
       type: projects
     values:
       layout: single
