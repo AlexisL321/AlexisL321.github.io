@@ -282,7 +282,7 @@ defaults:
   #_history
   - scope:
       path: "history/"
-      type: pages
+      type: history
     values:
       layout: single
       author_profile: true
