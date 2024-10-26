@@ -21,7 +21,7 @@ repository: "AlexisL321/AlexisL321.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar: "profile.png"
+  avatar: "profile1.png"
   name: "Yifei (Alexis) Liu"
   pronouns: # example: "she/her"
   bio: "Fourth-year undergrad at UW-Madison, majoring CS, Math and History"
