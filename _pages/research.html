@@ -35,7 +35,12 @@ Multigrid preconditioned Conjugate Gradient method has been the standard
  Darcy's equation discretized using finite element method and the matrix
  coming out of the FEM discretization is sparse and ill-conditioned with
  very clear block structure along the diagonal (the blocks along the
- diagonal will also be sparse).<br><br>
+ diagonal will also be sparse).<br>
+I have been doing prototyping work in Python to implement multiple
+ iterative methods including CG, MG, MGPCG and to try out different ways to
+ speed up the block Jacobi smoother. I will switch to C/C++ with
+ parallelization framework in the near future. <br>
+This research is mentored by Prof. Maurice Fabien.
  <!--
  I started this research in September this year, so I haven't started the
  implementation so far. Until now I have learned sparse matrix algorithm
