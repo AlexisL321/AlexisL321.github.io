@@ -36,7 +36,8 @@ Multigrid preconditioned Conjugate Gradient method has been the standard
  coming out of the FEM discretization is sparse and ill-conditioned with
  very clear block structure along the diagonal (the blocks along the
  diagonal will also be sparse).<br>
-I have been doing prototyping work in Python to implement multiple
+I have been doing <a href="https://github.com/AlexisL321/batched_solver"
+target="_blank" >prototyping work</a> in Python to implement multiple
  iterative methods including CG, MG, MGPCG and to try out different ways to
  speed up the block Jacobi smoother. I will switch to C/C++ with
  parallelization framework in the near future. <br>
@@ -62,7 +63,7 @@ This research is mentored by Prof. Maurice Fabien.
 
  <div id="SAV">
  <h2>Improving the SAV method for CH-NS Coupled Equations</h2>
- <p> -- </p>
+ <p>Sept.2023 -- present</p>
  <div class="read-more-container" max-length="500">
  <p class="read-more-text">
 Scalar Auxiliary Variable (SAV) method was proposed in recent years to
@@ -74,13 +75,21 @@ Scalar Auxiliary Variable (SAV) method was proposed in recent years to
  relaxation) has been proposed to solve this issue. <a
  href="https://www.sciencedirect.com/science/article/pii/S1007570422005421?casa_token=9xgfd9jPJEQAAAAA:p9-vxz5o4jtWTH2M47oJ7rgLz9LRe_gG_-KqEIeX-w8NYPG9tlildTqubScpFiJZAyBii6YFyw#sec3"
  target="_blank" title="See the paper">Here</a> is R-SAV being used to
- solve Cahn-Hilliard and Navier-Stokes coupled equation (CHNS).<br><br>
+ solve Cahn-Hilliard and Navier-Stokes coupled equation (CHNS).<br>
 Incompressible Navier-Stokes equation is usually solved by projection
  method, and to ensure the stability of the solution when using SAV to
  solve CH and projection to solve NS in CHNS coupled problem, there is a
  scheme called <a
  href="https://www.math.purdue.edu/~shen7/pub/LS_M3AS22.pdf"
- target="_blank" title="See the paper">M-SAV</a> (multiple SAV). 
+ target="_blank" title="See the paper">M-SAV</a> (multiple SAV). Prof. Jie
+ Shen also proposed an <a
+ href="https://epubs.siam.org/doi/abs/10.1137/19M1298627" target="_blank"
+ >improved method </a>for the original SAV that the SAV could be easily
+ extended to higher order scheme. This research is to draw inspiration from
+ the above improvements of the SAV method to proposed a scheme to solve the
+ CHNS coupled equations that is stable, satisfies the original energy
+ dissipation function and can be extended to higher order scheme. <br>
+This research is mentored by Prof. Yukun Yue.
  </p>
  <p class="read-more-btn">...Read More</>
  </div>
